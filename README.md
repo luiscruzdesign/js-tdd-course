@@ -1,4 +1,5 @@
 ![code size](https://img.shields.io/github/languages/code-size/luiscruzdesign/js-tdd-course.svg)
+![license](https://img.shields.io/github/license/luiscruzdesign/js-tdd-course.svg)
 
 # Project Title
 
