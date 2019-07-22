@@ -5,36 +5,56 @@
 /* global describe,it */
 /* eslint-env mocha */
 const expect = require('chai').expect;
+const calc = require('../src/main.js');
 
-describe('Main', function () {
-  let arr;
+describe('Calc', function () {
 
-  // roda todas as vezes, antes de cada bloco
-  beforeEach(function () {
-    arr = [1, 2, 3];
+  // smoke tests
+  describe('smoke tests', function () {
+
+    it('should exist the calc lib', function () {
+      expect(calc).to.exist;
+    });
+
+    it('should exist method `sum`', function () {
+      expect(calc.sum).to.exist;
+      expect(calc.sum).to.be.a('function');
+    });
+
+    it('should exist method `sub`', function () {
+      expect(calc.sub).to.exist;
+      expect(calc.sub).to.be.a('function');
+    });
+
+    it('should exist method `mult`', function () {
+      expect(calc.mult).to.exist;
+      expect(calc.mult).to.be.a('function');
+    });
+
+    it('should exist method `div`', function () {
+      expect(calc.div).to.exist;
+      expect(calc.div).to.be.a('function');
+    });
   });
 
-  // testar tipos ou se existe (smoke test)
-  it('should be an array', function () {
-    expect(arr).to.be.a('array');
+  describe('Sum', function () {
+    it('should return 4 when sum(2,2)', function () {
+      expect(calc.sum(2, 2)).to.be.equal(4);
+    });
   });
 
-  it('should have a size o 4 when push another value to the array', function () {
-    arr.push(4);
-    expect(arr).to.have.lengthOf(4);
+  describe('Sub', function () {
+    it('should return 4 when sub(6,2)', function () {
+      expect(calc.sub(6, 2)).to.be.equal(4);
+    });
+    it('should return -4 when sub(6,10)', function () {
+      expect(calc.sub(6, 10)).to.be.equal(-4);
+    });
   });
 
-  it('should remove 3 when use pop in the array', function () {
-    arr.pop();
-    expect(arr).to.not.include(3);
-  });
-
-  it('should return 3 qhen pop 3 from the array', function () {
-    expect(arr.pop() === 3).to.be.true;
-  });
-
-  it('should have a size o 2 when pop a value to the array', function () {
-    arr.pop();
-    expect(arr).to.have.lengthOf(2);
+  describe('Mult', function () {
+    it('should return 4 when mult(2,2)', function () {
+      expect(calc.mult(2, 2)).to.be.equal(4);
+    });
   });
 });
