@@ -1,3 +1,6 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable func-names */
+/* eslint-disable object-shorthand */
 module.exports = {
   sum: function(num1, num2) {
     return num1 + num2;
@@ -8,5 +11,7 @@ module.exports = {
   mult: function(num1, num2) {
     return num1 * num2;
   },
-  div: function() {}
+  div: function(num1, num2) {
+    return (num2 === 0) ? 'Não é possível divisão por zero' : num1 / num2;
+  }
 }
