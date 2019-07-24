@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
 const FizzBuzz = (num) => {
   if (num === 0) return 0;
