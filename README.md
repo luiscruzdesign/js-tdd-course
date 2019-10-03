@@ -1,6 +1,7 @@
 ![code size](https://img.shields.io/github/languages/code-size/luiscruzdesign/js-tdd-course.svg)
 ![license](https://img.shields.io/github/license/luiscruzdesign/js-tdd-course.svg)
 [![Build Status](https://travis-ci.org/luiscruzdesign/meu-primeiro-projeto.svg?branch=master)](https://travis-ci.org/luiscruzdesign/meu-primeiro-projeto)
+[![Coverage Status](https://coveralls.io/repos/github/luiscruzdesign/js-tdd-course/badge.svg?branch=master)](https://coveralls.io/github/luiscruzdesign/js-tdd-course?branch=master)
 
 # Spotify Wrapper
 
